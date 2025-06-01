@@ -1,9 +1,13 @@
-import NavBarTwo from "../components/nav bars/NavBarTwo"
+import NavBarTwo from "../components/nav bars/NavBarTwo";
+// import UserProfile from "../components/user profile/UserProfile";
+import SectionOne from "../components/dashboard components/SectionOne";
 const DashboardPage = () => {
   return (
     <div>
         <NavBarTwo />
-        this is the dashboard
+        <SectionOne />
+        {/* <UserProfile /> */}
+        
     </div>
   )
 }

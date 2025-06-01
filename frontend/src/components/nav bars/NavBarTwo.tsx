@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // for icons, or replace with your own
+import { Menu, X } from "lucide-react"; // for icons
 
 const NavBarTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
