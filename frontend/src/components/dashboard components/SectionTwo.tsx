@@ -9,11 +9,21 @@ import planeIcon from "../../icons/planeIcon.svg"
 import comIconOne from "../../icons/comIconOne.svg"
 import comIconTwo from "../../icons/comIconTwo.svg"
 import comIconThree from "../../icons/comIconThree.svg"
+import academicIconOne from "../../icons/academicOne.svg"
+import academicIconTwo from "../../icons/academicTwo.svg"
+import academicIconThree from "../../icons/academicThree.svg"
+import academicIconFour from "../../icons/academicFour.svg"
+import medicalIconOne from "../../icons/medicalOne.svg"
+import medicalIconThree from "../../icons/medicalThree.svg"
+import toolsIconOne from "../../icons/toolsOne.svg"
+import toolsIconThree from "../../icons/toolsThree.svg"
+import toolsIconFour from "../../icons/toolsFour.svg"
+
 
 const SectionTwo = () => {
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-6xl mx-auto px-4 py-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <CardOne
           title="Explore CUNY Schools"
@@ -40,20 +50,21 @@ const SectionTwo = () => {
         />
         <CardOne
           title="Academic & Career Boost"
-          image={[]}
+          image={[academicIconOne, academicIconTwo, academicIconFour, academicIconThree,]}
           description="Enhance your academic journey with inplanning tools, career services, and mentorship."
           link="/resources"
         />
+       
         <CardOne
-          title="Academic & Career Boost"
-          image={[]}
-          description="Enhance your academic journey with inplanning tools, career services, and mentorship."
+          title="Student Resources & Tools"
+          image={[toolsIconThree, toolsIconOne, toolsIconFour]}
+          description="Find class schedules, tutoring, technology services, and helpful guides all in one place."
           link="/resources"
         />
-        <CardOne
-          title="Academic & Career Boost"
-          image={[]}
-          description="Enhance your academic journey with inplanning tools, career services, and mentorship."
+         <CardOne
+          title="Health & Wellness"
+          image={[medicalIconOne, medicalIconThree]}
+          description="Access physical and mental health services, on-campus clinics, and self-care resources."
           link="/resources"
         />
       </div>

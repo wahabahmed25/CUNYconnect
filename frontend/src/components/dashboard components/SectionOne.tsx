@@ -15,12 +15,7 @@ const SectionOne = () => {
 
       {/* Buttons */}
       <div className="flex flex-wrap lg:flex-nowrap justify-center gap-4 max-w-6xl w-full">
-        <Link
-          to="/explore"
-          className="flex-1 lg:flex-none w-full lg:w-auto text-center bg-white text-[#1e3a8a] font-semibold px-6 py-4 rounded-xl shadow-md hover:scale-[1.02] transition"
-        >
-          Personal Page
-        </Link>
+        
         <Link
           to="/explore"
           className="flex-1 lg:flex-none w-full lg:w-auto text-center bg-white text-[#1e3a8a] font-semibold px-6 py-4 rounded-xl shadow-md hover:scale-[1.02] transition"
