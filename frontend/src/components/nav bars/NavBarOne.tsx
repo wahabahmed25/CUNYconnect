@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const NavBarOne = () => {
   return (
     <div className="flex items-center justify-between px-6 py-4 shadow-md bg-white w-full">
-      <h1 className="text-3xl cursor-default font-bold text-[#275392]">
+      <Link to = "/landing" className="text-3xl cursor-pointer font-bold text-[#275392]">
         CUNYconnect
-      </h1>
+      </Link>
       <nav>
         <ul className="flex gap-6 text-gray-800 font-medium">
           <li>
