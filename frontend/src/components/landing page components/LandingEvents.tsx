@@ -1,3 +1,4 @@
+//fake "upcoming events" in landing page
 import CardThree from "../cards/CardThree";
 
 const LandingEvents = () => {

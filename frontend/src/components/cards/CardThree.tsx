@@ -1,4 +1,4 @@
-
+//used in landing page events
 interface CardProp {
   date: string;       // Format: ISO string or any valid date string
   title: string;

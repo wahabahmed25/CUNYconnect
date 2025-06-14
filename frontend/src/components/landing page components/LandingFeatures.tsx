@@ -1,3 +1,5 @@
+//shows core features of website
+
 import CardTwo from "../cards/CardTwo";
 import landingIconOne from "../../icons/landingOne.svg";
 import landingIconSix from "../../icons/landingSix.svg";

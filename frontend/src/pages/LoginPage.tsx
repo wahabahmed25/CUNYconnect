@@ -1,3 +1,4 @@
+//where users input email and password to log into their account form
 import NavBarOne from "../components/nav bars/NavBarOne";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";

@@ -1,3 +1,5 @@
+//landing page header --> gives short overview of website
+
 import { Link } from "react-router-dom";
 
 const LandingHeader = () => {

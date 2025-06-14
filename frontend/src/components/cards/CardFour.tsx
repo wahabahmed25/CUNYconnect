@@ -1,3 +1,5 @@
+//used in landing page reviews
+
 import type React from "react";
 import defaultPfpIcon from "../../icons/bluepfpIcon.svg";
 

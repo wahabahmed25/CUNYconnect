@@ -1,3 +1,5 @@
+//sign up page form,where user enter name email and password to create account
+
 import NavBarOne from "../components/nav bars/NavBarOne";
 import InputOne from "../components/Input Fields/InputOne";
 import React, { useState } from "react";

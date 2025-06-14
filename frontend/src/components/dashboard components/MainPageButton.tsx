@@ -1,3 +1,5 @@
+//link to main page of website
+
 import { Link } from "react-router-dom";
 
 const PersonalPageButton = () => {

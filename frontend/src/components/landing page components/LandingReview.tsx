@@ -1,3 +1,4 @@
+//fake reviews of users
 import CardFour from "../cards/CardFour";
 
 const LandingReview = () => {

@@ -1,3 +1,4 @@
+//used in signup page
 // Define a type for the field names
 type FieldName = "name" | "email" | "password";
 

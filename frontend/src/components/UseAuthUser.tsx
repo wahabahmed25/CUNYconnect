@@ -1,3 +1,5 @@
+//global component to reuse logged in users details such as name and email
+
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase-config";

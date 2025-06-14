@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
-import HomePage from "./pages/HomePage";
+import MainPage from "./pages/MainPage";
 import { UserDataProvider } from "./components/user context/UserDataProvider";
 import LandingPage from "./pages/LandingPage";
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/home" element={<MainPage />} />
           <Route path="/landing" element={<LandingPage />} />
 
         </Routes>

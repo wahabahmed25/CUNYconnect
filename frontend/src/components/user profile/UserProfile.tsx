@@ -1,3 +1,5 @@
+//retrieves logged in users profile, currently is not being used anywhere
+
 import { useUserData } from "../user context/useUserData";
 const UserProfile = () => {
   const { userData, loading } = useUserData();

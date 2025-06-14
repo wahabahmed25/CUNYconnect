@@ -1,3 +1,5 @@
+//all components of dashboard which gives a breif overview or "links" to get started
+
 import NavBarTwo from "../components/nav bars/NavBarTwo";
 // import UserProfile from "../components/user profile/UserProfile";
 import SectionOne from "../components/dashboard components/SectionOne";

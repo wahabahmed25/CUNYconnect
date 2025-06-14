@@ -1,3 +1,5 @@
+//used in dashboard and is links to core features of website with short summaries
+
 import ExploreIcon from "../../icons/explore.svg";
 import CardOne from "../cards/CardOne";
 import financeIconOne from "../../icons/financeIconOne.svg";

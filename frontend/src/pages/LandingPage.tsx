@@ -1,3 +1,5 @@
+//takes in all components of landing page
+
 import LandingHeader from "../components/landing page components/LandingHeader"
 import LandingFeatures from "../components/landing page components/LandingFeatures"
 import LandingEvents from "../components/landing page components/LandingEvents"
