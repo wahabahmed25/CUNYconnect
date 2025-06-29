@@ -70,6 +70,9 @@ const SignupPage = () => {
       await set(ref(database, "users/" + user.uid), {
         name: formValue.name,
         email: formValue.email,
+        school: null,
+        classes: [],
+        onboarded: false
       });
 
       console.log(

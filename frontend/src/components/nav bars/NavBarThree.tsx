@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ArrowIcon from "../../icons/ArrowIcon.svg";
-import MenuIcon from "../../icons/MenuIcon.svg";
+import MenuIcon from "../../icons/MenuIcon.svg"; // Make sure this is a valid path to your menu icon
 
 interface PropType {
   college: string;
@@ -50,18 +50,19 @@ const NavBarThree = ({ college }: PropType) => {
         }`}
       >
         <ul
-          className={`pl-4 space-y-2 text-sm text-white/90
-            transition-opacity duration-400 ease-in-out
-            ${openSections[sectionKey] ? "opacity-100 scale-100" : "opacity-0 scale-95"}
-            transform origin-top-left
-          `}
+          className={`pl-4 space-y-2 text-sm text-white/90 transition-opacity duration-400 ease-in-out ${
+            openSections[sectionKey] ? "opacity-100 scale-100" : "opacity-0 scale-95"
+          } transform origin-top-left`}
           style={{
             transitionProperty: "opacity, transform",
             transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
           }}
         >
           {links.map((link) => (
-            <li key={link.label} className="transform transition-transform duration-300 ease-out hover:scale-105">
+            <li
+              key={link.label}
+              className="transform transition-transform duration-300 ease-out hover:scale-105"
+            >
               <Link to={link.to} className="hover:underline block">
                 {link.label}
               </Link>
@@ -74,25 +75,37 @@ const NavBarThree = ({ college }: PropType) => {
 
   return (
     <>
-      {/* Mobile toggle button */}
-      <div className="md:hidden p-4 bg-[#0033A0] text-white flex items-center justify-between">
+      {/* Mobile Header */}
+      <div className="md:hidden p-4 bg-[#0033A0] text-white flex items-center justify-between fixed top-0 left-0 w-full z-50 shadow-md">
         <h1 className="text-xl font-bold">{college || "Hunter College"}</h1>
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <img src={MenuIcon} alt="menu" className="w-6 h-6 hover:cursor-pointer invert" />
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="focus:outline-none">
+          <img
+            src={MenuIcon}
+            alt="menu"
+            className="w-6 h-6 invert"
+          />
         </button>
       </div>
 
-      {/* Sidebar for medium and up, or slide-in for mobile */}
+      {/* Sidebar */}
       <aside
-        className={`bg-[#0033A0] text-white w-64 h-screen p-6 shadow-xl fixed md:static z-40 transition-transform duration-300 ease-in-out 
-        ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0
-        overflow-y-auto
-        scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent
+        className={`
+          bg-[#0033A0] text-white w-64 h-screen p-6 shadow-xl z-40
+          fixed md:static top-0 left-0
+          transform transition-transform duration-300 ease-in-out
+          ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0
+          overflow-y-auto
+          scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent
+          pt-20 md:pt-0
         `}
       >
-        <h1 className="text-2xl font-extrabold mb-8 tracking-wide border-b border-white/30 pb-2">
-          {college || "Hunter College"}
-        </h1>
+        {/* Title inside sidebar only on desktop */}
+        <div className="hidden md:block">
+          <h1 className="text-2xl mt-4 font-extrabold mb-8 tracking-wide border-b border-white/30 pb-2">
+            {college || "Hunter College"}
+          </h1>
+        </div>
+
         <nav className="max-h-[85vh]">
           <ul className="space-y-8">
             <Section
