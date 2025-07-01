@@ -4,6 +4,7 @@ import NavBarThree from "../components/nav bars/NavBarThree";
 import InfoCard from "../components/cards/InfoCard";
 import PortalTitle from "../components/CUNY-portal/PortalTitle";
 import ResourcesCard from "../components/cards/ResourcesCard";
+import PostField from "../components/Social/PostField";
 const MainPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
@@ -49,6 +50,11 @@ const MainPage = () => {
               <ResourcesCard resource="Tutoring" icon="" />
             </div>
           </div>
+        </div>
+        {/* Right Section: Social Media / Post Field */}
+        <div className="w-full lg:w-1/3">
+          <h1 className="text-xl font-semibold mb-4">CUNY Social Feed</h1>
+          <PostField />
         </div>
       </main>
     </div>
