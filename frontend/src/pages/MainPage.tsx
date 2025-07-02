@@ -52,8 +52,7 @@ const MainPage = () => {
           </div>
         </div>
         {/* Right Section: Social Media / Post Field */}
-        <div className="w-full lg:w-1/3">
-          <h1 className="text-xl font-semibold mb-4">CUNY Social Feed</h1>
+        <div className="w-full lg:w-1/3 right-5 top-5 ml-5">
           <PostField />
         </div>
       </main>

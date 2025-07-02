@@ -17,7 +17,7 @@ export const UserDataProvider = ({ children }: { children: React.ReactNode }) =>
         const userRef = ref(db, `users/${user.uid}`);
         const snapshot = await get(userRef);
         if (snapshot.exists()) {
-          setUserData(snapshot.val());
+          setUserData({...snapshot.val(), uid: user.uid});
         }
       }
       setLoading(false);
