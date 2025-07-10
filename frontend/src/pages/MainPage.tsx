@@ -4,7 +4,8 @@ import NavBarThree from "../components/nav bars/NavBarThree";
 import InfoCard from "../components/cards/InfoCard";
 import PortalTitle from "../components/CUNY-portal/PortalTitle";
 import ResourcesCard from "../components/cards/ResourcesCard";
-import PostField from "../components/Social/PostField";
+import PostField from "../components/Social/CreatePost";
+import DisplayPost from "../components/Social/DisplayPost";
 const MainPage = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
@@ -54,6 +55,11 @@ const MainPage = () => {
         {/* Right Section: Social Media / Post Field */}
         <div className="w-full lg:w-1/3 right-5 top-5 ml-5">
           <PostField />
+          <div className="mt-3">
+            <DisplayPost />
+          </div>
+          
+          
         </div>
       </main>
     </div>

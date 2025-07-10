@@ -1,3 +1,5 @@
+//used in mainPage.tsx/cuny portal
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ArrowIcon from "../../icons/ArrowIcon.svg";
@@ -115,8 +117,9 @@ const NavBarThree = ({ college }: PropType) => {
                 { label: `About ${college}`, to: `/${college.toLowerCase()}/about` },
                 { label: "Departments", to: `/${college.toLowerCase()}/departments` },
                 { label: "Admissions", to: `/${college.toLowerCase()}/admissions` },
-                { label: "Campus Map", to: `/${college.toLowerCase()}/campus-map` },
                 { label: "Events Calendar", to: `/${college.toLowerCase()}/events` },
+                { label: "CUNY Explore", to: `/CUNY-explore` },
+
               ]}
             />
             <Section

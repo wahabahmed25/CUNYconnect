@@ -36,6 +36,7 @@ const PostField = () => {
         createdAt: Date.now(),
         uid: user?.uid,
         author: userData?.name || "Anonymous",
+        school: "nothing"
       });
       setInputValue({ post: "" });
     } catch (err) {

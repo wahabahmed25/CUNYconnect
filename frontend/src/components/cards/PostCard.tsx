@@ -1,20 +1,30 @@
 //messages table: user, message, date, school, likes, comments
-
+//used for social media feed
 import personIcon from "../../icons/personIcon.svg"; // Adjust path if needed
 
 interface PostCardProps {
-  user: string;
-  message: string;
-  date: string;
+  author: string;
+  post: string;
+  createdAt: string;
   school: string;
   likes: number;
   comments: number;
+  uid: string;
 }
 
+// key={post.id}
+//           author={post.author}
+//           post={post.post}
+//           createdAt={post.createdAt}
+//           school={post.school}
+//           likes={post.likes}
+//           comments={post.comments}
+//           uid = {post.uid}
+
 const PostCard = ({
-  user,
-  message,
-  date,
+  author,
+  post,
+  createdAt,
   school,
   likes,
   comments,
@@ -29,14 +39,14 @@ const PostCard = ({
           className="h-10 w-10 rounded-full mr-3"
         />
         <div>
-          <p className="text-sm font-semibold text-gray-900">{user}</p>
+          <p className="text-sm font-semibold text-gray-900">{author}</p>
           <p className="text-xs text-gray-500">{school}</p>
         </div>
-        <div className="ml-auto text-xs text-gray-400">{date}</div>
+        <div className="ml-auto text-xs text-gray-400">{createdAt}</div>
       </div>
 
       {/* Message */}
-      <p className="text-sm text-gray-800 mb-3">{message}</p>
+      <p className="text-sm text-gray-800 mb-3">{post}</p>
 
       {/* Footer: likes + comments */}
       <div className="flex items-center gap-4 text-xs text-gray-500">
