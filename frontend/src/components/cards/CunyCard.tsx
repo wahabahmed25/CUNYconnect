@@ -10,7 +10,7 @@ interface cardProp {
 const CunyCard = ({ image, name, location, onClick }: cardProp) => {
   return (
     <div
-      className="cursor-pointer max-w-xs bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+      className="cursor-pointer max-w-xs mb-4 bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
       onClick={onClick}
     >
       <img src={image} alt={name} className="w-full h-40 object-cover" />

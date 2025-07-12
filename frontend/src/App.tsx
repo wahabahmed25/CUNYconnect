@@ -4,6 +4,7 @@ import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import MainPage from "./pages/MainPage";
+import CunyExplorePage from "./pages/CunyExplorePage";
 import { UserDataProvider } from "./components/user context/UserDataProvider";
 import LandingPage from "./pages/LandingPage";
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/main" element={<MainPage />} />
           <Route path="/landing" element={<LandingPage />} />
-
+          <Route path="/CUNY-explore" element={<CunyExplorePage />} />
         </Routes>
       </UserDataProvider>
     </div>

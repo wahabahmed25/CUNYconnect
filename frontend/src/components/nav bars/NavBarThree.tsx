@@ -93,7 +93,7 @@ const NavBarThree = ({ college }: PropType) => {
       <aside
         className={`
           bg-[#0033A0] text-white w-64 h-screen p-6 shadow-xl z-40
-          fixed md:static top-0 left-0
+          fixed md:top-0 md:left-0 top-0 left-0
           transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0
           overflow-y-auto
