@@ -4,8 +4,9 @@ import { getAnalytics } from "firebase/analytics";
 import { getDatabase } from "firebase/database";
 import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
+const key = import.meta.env.VITE_FIREBASE_KEY
 const firebaseConfig = {
-  apiKey: "AIzaSyD2lDrHAIjMLO_pgKNn_xMrQjccrnpIskk",
+  apiKey: key,
   authDomain: "cunyconnect-46e63.firebaseapp.com",
   projectId: "cunyconnect-46e63",
   storageBucket: "cunyconnect-46e63.appspot.com", 

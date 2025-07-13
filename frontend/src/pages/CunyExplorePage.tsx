@@ -4,6 +4,7 @@ import CunyCard from "../components/cards/CunyCard";
 import { cunyColleges } from "../components/data/CollegeData";
 import LayoutOne from "../components/layouts/LayoutOne";
 import CollegeSearchBar from "../components/Input Fields/CollegeSearchBar";
+import CollegeMap from "../components/api work/CollegeMap";
 import { useState } from "react";
 const CUNYExplorePage = () => {
   const [searchText, setSearchText] = useState<string>("");
@@ -23,9 +24,11 @@ const CUNYExplorePage = () => {
     <LayoutOne>
       <div className="min-h-screen bg-gray-50 sm:px-8 md:px-4 py-6">
         <NavBarThree college="Hunter College" />
+        
         <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
           Explore CUNY Colleges
         </h1>
+        <CollegeMap />
         <CollegeSearchBar 
             type="text"
             value={searchText}
